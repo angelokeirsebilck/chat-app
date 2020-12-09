@@ -87,6 +87,7 @@ button:disabled {
 
 .chat {
     display: flex;
+    max-height: 100vh;
 }
 
 .chat__sidebar {
@@ -103,7 +104,6 @@ button:disabled {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    max-height: 100vh;
 }
 
 .chat__messages {
