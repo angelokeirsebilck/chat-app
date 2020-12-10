@@ -87,11 +87,11 @@ button:disabled {
 
 .chat {
     display: flex;
-    height: 100vh;
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
 }
 
 .chat__sidebar {
-    height: 100%;
     color: white;
     background: #333744;
     width: 225px;
@@ -101,7 +101,6 @@ button:disabled {
 /* Chat styles */
 
 .chat__main {
-    height: calc(100% - 100px);
     flex-grow: 1;
     display: flex;
     flex-direction: column;
